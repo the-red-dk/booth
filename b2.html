@@ -1,0 +1,112 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photo Booth</title>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mybooth.css">
+    </head>
+
+
+    <body>
+        <div class="main">
+
+            <div class="photo-area">
+
+                <div class="heading">4-CUT BOOTH</div>
+                <div class="photo">
+                    <video id="video" autoplay></video>
+                </div>
+                <div class="buttons">
+                    <select id="timer" style="padding: 10px 0 0 10px; text-align: center;">
+                        <option value="3">3s</option>
+                        <option value="5">5s</option>
+                        <option value="10">10s</option>
+                        <option value="15">15s</option>
+                    </select>
+                    <button onclick="startCountdown()">Start</button>
+                    <button onclick="downloadImage()">Download</button>
+                </div>
+            </div>
+            
+            <div class="photo-temp">
+                
+                <div>
+                    <span class="your-photos">YOUR PHOTOS</span>
+                </div>
+
+                <div class="frame" id="strip">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    
+                    <div class="boxy">
+                        <p class="watermark">daksha.gifts</p>
+                        <p class="watermark">&nbsp; • &nbsp;</p>
+                        <p class="watermark">19-03-2025</p>
+
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <script src="mybooth.js"></script>
+    </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photo Booth</title>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="b2.css">
+    </head>
+
+    <body>
+        <div class="main">
+
+            <div class="photo-area">
+                <div class="heading">4-CUT BOOTH</div>
+                <div class="photo">
+                    <!-- Add a video element for live preview -->
+                    <video id="video" autoplay></video>
+                </div>
+                <div class="buttons">
+                    <select id="timer" style="padding: 10px 0 0 10px; text-align: center;">
+                        <option value="3">3s</option>
+                        <option value="5">5s</option>
+                        <option value="10">10s</option>
+                        <option value="15">15s</option>
+                    </select>
+                    <button onclick="startCountdown()">Start</button>
+                    <button onclick="downloadImage()">Download</button>
+                </div>
+            </div>
+            
+            <div class="photo-temp">
+                <div>
+                    <span class="your-photos">YOUR PHOTOS</span>
+                </div>
+
+                <div class="frame" id="strip">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    
+                    <div class="boxy">
+                        <p class="watermark">daksha.gifts</p>
+                        <p class="watermark">&nbsp; • &nbsp;</p>
+                        <p class="watermark" id="date-watermark"></p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <script src="b2.js"></script>
+    </body>
+</html>

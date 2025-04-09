@@ -1,0 +1,145 @@
+* {
+    font-family: 'Borel', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F2DDE0;
+}
+
+.main {
+    display: flex;
+}
+
+.photo-area {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+option, select, button {
+    
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    padding-top: 10px;
+    background-color: #F9A9BC;
+    border: none;
+    font-weight: 1000;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 60px;
+    margin-right: 10px;
+}
+
+.heading {
+    font-size: 48px;
+}
+
+.photo {
+    border: 5px solid #F9A9BC;    
+    width: 50vw; 
+    max-width: 637.8px; 
+    aspect-ratio: 637.8 / 480; 
+    margin-bottom: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.photo-temp {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 30%;
+    justify-content: flex-start;
+    padding: 20px;
+    align-items:center;
+    margin-top: 20px;
+}
+
+.your-photos {
+
+    text-align: center;
+}
+/* .frame {
+    background-color: black;
+    height: 50vh; 
+    max-height: 600px; 
+    aspect-ratio: 200 / 600; 
+} */
+
+/* .inside {
+    background-color: white;
+} */
+
+.frame {
+    /* width: 200px;
+    height: 600px; */
+    background-color: black;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+    height: 60vh; /* Makes it responsive */
+    max-height: 1200px; /* Ensures it doesn't exceed the original height */
+    aspect-ratio: 400 / 1200;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box {
+    /* border: 2px solid black;  */
+    background-color: white;
+    /* width: 180px;
+    height: 127px; */
+    width: 90%; /* Adjust dynamically within frame */
+    max-width: 180px;
+    aspect-ratio: 180 / 127; /* Maintains aspect ratio */
+    flex: 1;
+    /* border: 1px solid #ccc; */
+}
+
+#strip {
+    display: flex; /* Use flexbox to align boxes in a row */
+    flex-direction: column; /* Stack boxes vertically */
+}
+
+.boxy {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.watermark {
+
+    color: white;
+    /* position: absolute; */
+    bottom: 0;
+    /* left: 10px; */
+    font-size: min(2vw, 11.67px);
+    white-space: nowrap; 
+}
+
+.countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9A9BC;
+    display: none;
+}
